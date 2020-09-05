@@ -28,3 +28,7 @@ export const RBRACE = "}";
 // Keywords
 export const FUNCTION = "FUNCTION";
 export const LET = "LET";
+
+export function newToken(tokenType: TokenType, char: string): Token {
+  return { Type: tokenType, Literal: char };
+}
